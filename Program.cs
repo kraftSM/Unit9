@@ -12,8 +12,8 @@ namespace Unit9
     internal class Program
     {
         static string UnitName = "Un:9";
-        static string UnDescr = "File System Operation";
-        static string ExName = "HW-1/4";
+        static string UnDescr = "Exeptiions";
+        static string ExName = "HW-1/9";
         static string ExDescr = "Clear 30min-idle Items";
 
         static string inFileFullNamelPath;
