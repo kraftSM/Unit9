@@ -12,9 +12,9 @@ namespace Unit9
     internal class Program
     {
         static string UnitName = "Un:9";
-        static string UnDescr = "Exeptiions";
+        static string UnDescr = "Exeptiions/Action.";
         static string ExName = "HW-1/9";
-        static string ExDescr = "Clear 30min-idle Items";
+        static string ExDescr = "Unit tests";
 
         static string inFileFullNamelPath;
         //static string inFileName = "Students.dat";
