@@ -1,0 +1,8 @@
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\obj\Debug\caUn8_Wh4-4.csproj.AssemblyReference.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\obj\Debug\caUn8_Wh4-4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\obj\Debug\caUn8_Wh4-4.csproj.CoreCompileInputs.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\bin\Debug\FinalTask.exe.config
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\bin\Debug\FinalTask.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\bin\Debug\FinalTask.pdb
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\obj\Debug\FinalTask.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Wh4-4\obj\Debug\FinalTask.pdb

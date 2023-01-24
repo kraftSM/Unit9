@@ -1,0 +1,8 @@
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\bin\Debug\caHw_9-2.exe.config
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\bin\Debug\caHw_9-2.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\bin\Debug\caHw_9-2.pdb
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\obj\Debug\caHw_9-2.csproj.AssemblyReference.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\obj\Debug\caHw_9-2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\obj\Debug\caHw_9-2.csproj.CoreCompileInputs.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\obj\Debug\caHw_9-2.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caHw_9-2\obj\Debug\caHw_9-2.pdb
