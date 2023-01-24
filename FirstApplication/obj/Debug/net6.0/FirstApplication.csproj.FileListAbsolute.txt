@@ -1,0 +1,15 @@
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.csproj.AssemblyReference.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.AssemblyInfoInputs.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.AssemblyInfo.cs
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.csproj.CoreCompileInputs.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\bin\Debug\net6.0\FirstApplication.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\bin\Debug\net6.0\FirstApplication.deps.json
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\bin\Debug\net6.0\FirstApplication.runtimeconfig.json
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\bin\Debug\net6.0\FirstApplication.dll
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\bin\Debug\net6.0\FirstApplication.pdb
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.dll
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\refint\FirstApplication.dll
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.pdb
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\FirstApplication.genruntimeconfig.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\FirstApplication\obj\Debug\net6.0\ref\FirstApplication.dll

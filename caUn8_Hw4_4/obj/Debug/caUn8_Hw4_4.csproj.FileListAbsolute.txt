@@ -1,0 +1,8 @@
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\bin\Debug\caUn8_Hw4_4.exe.config
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\bin\Debug\caUn8_Hw4_4.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\bin\Debug\caUn8_Hw4_4.pdb
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\obj\Debug\caUn8_Hw4_4.csproj.AssemblyReference.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\obj\Debug\caUn8_Hw4_4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\obj\Debug\caUn8_Hw4_4.csproj.CoreCompileInputs.cache
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\obj\Debug\caUn8_Hw4_4.exe
+C:\Users\Sergey.RSFGT\SkillFactory\ls_1\caUn8_Hw4_4\obj\Debug\caUn8_Hw4_4.pdb
