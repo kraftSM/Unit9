@@ -21,9 +21,6 @@ namespace caHw_9_1
         static string ExName = "HW-1/9";
         static string ExDescr = "My own Exception";
 
-        static int exIndex = 0;
-
-      
         static Exception[] dimOfException;
 
         static protected string UnTitle
@@ -57,39 +54,38 @@ namespace caHw_9_1
             Console.WriteLine("{0} ", Promt);
             iniExceptionDim();            
 
-            for (int j = exIndex; j < dimOfException.Length; j++)
+            for (int j = 0; j < dimOfException.Length; j++)
             {
                 try
                 {
-                    Console.WriteLine("{0}: Activating Exception from dimOfException[{1}]  : Message = {2}", Promt, j, dimOfException[j].Message);
-                    exIndex = j;
+                    Console.WriteLine("{0}: Activating Exception from dimOfException[{1}]  = {2}", Promt, j, dimOfException[j].GetType());
                     throw (dimOfException[j]);
                 }
                 catch (TestExeption exc)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("{0}: Get TestExeption. Msg:{1}", Promt, exc.Message);
+                    Console.WriteLine("{0}: [TestExeption] Get Exception of type:{1} . Msg:{2}", Promt, exc.GetType(), exc.Message);
                 }
 
                 catch (DivideByZeroException ex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red; 
-                    Console.WriteLine("{0}: Get Exception. Msg:{1}", Promt, ex.Message);
+                    Console.WriteLine("{0}: [DivideByZeroException] Get Exception of type:{1} . Msg:{2}", Promt, ex.GetType(), ex.Message);
                 }
                 catch (OutOfMemoryException ex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red; 
-                    Console.WriteLine("{0}: Get Exception. Msg:{1}", Promt, ex.Message);
+                    Console.WriteLine("{0}: [OutOfMemoryException] Get Exception of type:{1} . Msg:{2}", Promt, ex.GetType(), ex.Message);
                 }
                 catch (ArgumentOutOfRangeException ex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("{0}: Get Exception. Msg:{1}", Promt, ex.Message);
+                    Console.WriteLine("{0}: [ArgumentOutOfRangeException] Get Exception of type:{1} . Msg:{2}", Promt, ex.GetType(), ex.Message);
                 }
                 catch (AccessViolationException ex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red; 
-                    Console.WriteLine("{0}: Get Exception. Msg:{1}", Promt, ex.Message);
+                    Console.WriteLine("{0}: [AccessViolationException] Get Exception of type:{1} . Msg:{2}", Promt, ex.GetType(), ex.Message);
                 }
 
                 catch (Exception ex)
