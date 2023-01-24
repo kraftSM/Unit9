@@ -18,7 +18,7 @@ namespace caHw_9_2
         static string ExName = "HW-2/2";
         static string ExDescr = "Action/delegates";
 
-        static string[] dimOfFamily; 
+        static string[] dimOfFamily;
         static protected string UnTitle
         {
             get
@@ -38,43 +38,52 @@ namespace caHw_9_2
         {
             dimOfFamily = new string[5];
             dimOfFamily[0] = "Петров";
-            dimOfFamily[1] = "Брыльская"; 
+            dimOfFamily[1] = "Брыльская";
             dimOfFamily[2] = "Яковлев";
             dimOfFamily[3] = "Рязанов";
-            dimOfFamily[4] = "Мягков"; 
+            dimOfFamily[4] = "Мягков";
         }
         static void ShowSortingDim()
         {
-            for (int j = 0; j < dimOfFamily.Length; j++) Console.WriteLine("{0}: dimOfFamily[j] = {1} ", Promt, dimOfFamily[j]);
-            
+            for (int j = 0; j < dimOfFamily.Length; j++) Console.WriteLine("{0}: dimOfFamily[{1} ] = {2} ", Promt,j,dimOfFamily[j]);
+
         }
 
-        static void SortingDim(int sortType=0)
+        static void SortingDim(int sortType = 0)
         {
             //for (int j = 0; j < dimOfFamily.Length; j++) 
-                Console.WriteLine("{0}: Sorting dimOfFamily sortType ={1}", Promt, sortType);
-
+            Console.WriteLine("{0}: Sorting dimOfFamily sortType ={1}", Promt, sortType);
+            ShowSortingDim();
         }
 
         static void Main(string[] args)
         {
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
+
+            ErrUserEentryExeption  usrEx = new ErrUserEentryExeption("Вы ввели неверный симол. допустимы 1,2, Q/q");
             iniSortingDim();
             ShowSortingDim();
             try
             {
 
                 Console.WriteLine("{0}: Для выбора направления сортирвки введите\n1:(А..Я), 2-(Я..Ф), Q-выход ", Promt);
-                //    for (int j = 0; j < dimOfFamily.Length; j++)
-                //{ 
-                //}
-                //if (TestPath(dPath))
-                //{
-
-                //    //TestDir(dPath);
-                //}
-                SortingDim();
+                var userEntry =Console.ReadLine();
+                switch (userEntry)
+                { case "1": 
+                        SortingDim(0);
+                        break;
+                  case "2": 
+                        SortingDim(1);
+                        break;
+                    case "q": break;
+                    case "Q": break;
+                    default:
+                        {                            
+                            throw(usrEx);
+                        }
+                }
+                //ShowSortingDim();
             }
             catch (ErrUserEentryExeption exc)
             {
