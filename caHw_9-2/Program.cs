@@ -56,7 +56,7 @@ namespace caHw_9_2
 
         }
 
-        static void Main(string[] args)
+            static void Main(string[] args)
         {
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
@@ -64,14 +64,13 @@ namespace caHw_9_2
             ShowSortingDim();
             try
             {
-
+               
                 Console.WriteLine("{0}: Для выбора направления сортирвки введите\n1:(А..Я), 2-(Я..Ф), Q-выход ", Promt);
                 //    for (int j = 0; j < dimOfFamily.Length; j++)
-                //{ 
                 //}
                 //if (TestPath(dPath))
                 //{
-
+                
                 //    //TestDir(dPath);
                 //}
                 SortingDim();
