@@ -45,45 +45,46 @@ namespace caHw_9_2
         }
         static void ShowSortingDim()
         {
-            for (int j = 0; j < dimOfFamily.Length; j++) Console.WriteLine("{0}: dimOfFamily[{1} ] = {2} ", Promt,j,dimOfFamily[j]);
+            for (int j = 0; j < dimOfFamily.Length; j++) Console.WriteLine("{0}: dimOfFamily[{1} ] = {2} ", Promt, j, dimOfFamily[j]);
 
         }
-
+ 
         static void SortingDim(int sortType = 0)
         {
             //for (int j = 0; j < dimOfFamily.Length; j++) 
             Console.WriteLine("{0}: Sorting dimOfFamily sortType ={1}", Promt, sortType);
-            ShowSortingDim();
+            //ShowSortingDim();
         }
-
         static void Main(string[] args)
         {
+
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
 
-            ErrUserEentryExeption  usrEx = new ErrUserEentryExeption("Вы ввели неверный симол. допустимы 1,2, Q/q");
-            iniSortingDim();
-            ShowSortingDim();
+            ErrUserEentryExeption usrEx = new ErrUserEentryExeption("Допустимы сиволы 1,2,q/Q");
+             iniSortingDim();
+                ShowSortingDim();
+                Console.WriteLine("{0}: Для выбора направления сортирвки введите\n1:(А..Я), 2-(Я..Ф), Q-выход ", Promt);
+                var userEntry = Console.ReadLine();
             try
             {
-
-                Console.WriteLine("{0}: Для выбора направления сортирвки введите\n1:(А..Я), 2-(Я..Ф), Q-выход ", Promt);
-                var userEntry =Console.ReadLine();
                 switch (userEntry)
-                { case "1": 
+                {
+                    case "1":
                         SortingDim(0);
                         break;
-                  case "2": 
+                    case "2":
                         SortingDim(1);
                         break;
                     case "q": break;
                     case "Q": break;
                     default:
-                        {                            
-                            throw(usrEx);
+                        {
+                            throw (usrEx);
                         }
+
+
                 }
-                //ShowSortingDim();
             }
             catch (ErrUserEentryExeption exc)
             {
@@ -99,9 +100,9 @@ namespace caHw_9_2
             {
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            Console.WriteLine("{0}: Finishing.", ExTitle);
-            Console.WriteLine("{0}: Finished.\nPress any key.", UnTitle);
-            Console.ReadKey();
+Console.WriteLine("{0}: Finishing.", ExTitle);
+Console.WriteLine("{0}: Finished.\nPress any key.", UnTitle);
+Console.ReadKey();
         }
     }
 }
