@@ -10,7 +10,6 @@ namespace caHw9_2_Events
 {
     class ErrUserEentryExeption : Exception
     {
-        public ErrUserEentryExeption() : base() { }
         public ErrUserEentryExeption(string message) : base(message) { }
     }
     internal class Program
