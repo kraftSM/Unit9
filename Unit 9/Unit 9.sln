@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caHw_9-1", "..\caHw_9-1\caH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caHw_9-2", "..\caHw_9-2\caHw_9-2.csproj", "{EEA7C843-4D91-480F-A207-A3E618277C7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caHw9-2_Events", "..\caHw9-2_Events\caHw9-2_Events.csproj", "{8E2FEDA0-B5A5-4D7C-9D68-7D1A71176CF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EEA7C843-4D91-480F-A207-A3E618277C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA7C843-4D91-480F-A207-A3E618277C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA7C843-4D91-480F-A207-A3E618277C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2FEDA0-B5A5-4D7C-9D68-7D1A71176CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2FEDA0-B5A5-4D7C-9D68-7D1A71176CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2FEDA0-B5A5-4D7C-9D68-7D1A71176CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2FEDA0-B5A5-4D7C-9D68-7D1A71176CF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

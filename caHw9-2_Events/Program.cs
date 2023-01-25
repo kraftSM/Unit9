@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace caHw_9_2
+namespace caHw9_2_Events
 {
     class ErrUserEentryExeption : Exception
     {
@@ -16,14 +17,16 @@ namespace caHw_9_2
     {
         static string UnitName = "Un:9";
         static string UnDescr = "Exeptions/Action.";
-        static string ExName = "HW-2/2 Classic";
-        static string ExDescr = "Try/Classic";
+        static string ExName = "HW-2/2 Events";
+        static string ExDescr = "Events/Action/Delegates";
 
-        static bool UpSort = true;
-        static bool rqRestart = false;
         static bool rqExit = false;
         static string[] dimOfFamily;
         static ErrUserEentryExeption usrEx;
+
+        delegate void ChoiceHandler(bool sortDir);
+        static event ChoiceHandler evSortinRQ;
+
         static protected string UnTitle
         {
             get
@@ -55,27 +58,25 @@ namespace caHw_9_2
         }
         static void GetUserChoice()
         {
-            Console.WriteLine("{0}: Для выбора введите\n0: возврат  к начальнмм условиям \n1:сортировка (А...Я)\n2:сортировка (Я...А)\nQ-выход ", Promt);
+            Console.WriteLine("\n{0}: Для выбора введите\n0\t: возврат  к начальнмм условиям \n1\t:сортировка (А...Я)\n2\t:сортировка (Я...А)\n3,q/Q\t:выход ", Promt);
             var userEntry = Console.ReadLine();
             try
             {
                 switch (userEntry)
                 {
                     case "0":
-                        rqRestart = true;
-                        UpSort = true;
                         iniSortingDim();
                         ShowSortingDim();
                         break;
                     case "1":
-                        rqRestart = false;
-                        UpSort = true;
+                        evSortinRQ?.Invoke(true);
                         break;
-                    case
-                    "2":
-                        rqRestart = false;
-                        UpSort = false;
+                    case "2":
+                        evSortinRQ?.Invoke(false);
                         break;
+                    case "3":
+                        rqExit = true;
+                        break;                    
                     case "q":
                         rqExit = true;
                         break;
@@ -99,8 +100,6 @@ namespace caHw_9_2
             {
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
-
         }
         static void SortingDim(bool sortUp = true)
         {
@@ -141,9 +140,9 @@ namespace caHw_9_2
         }
         static void Main(string[] args)
         {
-
             Console.WriteLine("{0}|{1}:Startig ", UnTitle, ExTitle);
             Console.WriteLine("{0} ", Promt);
+            evSortinRQ += SortingDim;
 
             usrEx = new ErrUserEentryExeption("Допустима строка из 1-го символа из: [0,1,2,q,Q]");
             dimOfFamily = new string[6];
@@ -153,31 +152,6 @@ namespace caHw_9_2
             while (!rqExit)
             {
                 GetUserChoice();
-                //used for Sorting debug
-                //try
-                //{
-                //    if (!rqExit) SortingDim(UpSort);
-                //}
-                //catch (Exception ex)
-                //{
-                //    Console.ForegroundColor = ConsoleColor.Red;
-                //    Console.WriteLine("{0}: Get Exception.", Promt, ex.Message);
-                //}
-                //finally
-                //{
-                //    Console.ForegroundColor = ConsoleColor.White;
-                //}
-
-                if (!rqExit & !rqRestart)
-                    SortingDim(UpSort); //used for Sorting working
-                                        //if (!rqExit & !rqRestart)
-                                        //SortingDim(UpSort); //used for Sorting working
-
-                if (rqRestart)
-                {
-                    rqRestart = false;
-                    //break;
-                }
             }
             Console.WriteLine("\n{0}: Finishing.", ExTitle);
             Console.WriteLine("{0}: Finished.\nPress any key.", UnTitle);
